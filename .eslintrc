@@ -1,0 +1,128 @@
+{
+  "env": {
+    "browser": true,
+    "es6"    : true,
+    "node"   : true,
+    "jasmine": true,
+    "jest"   : true
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "airbnb",
+    "plugin:prettier/recommended",
+    "prettier/react",
+    "eslint:recommended",
+    "plugin:ramda/recommended",
+    "plugin:react/recommended"
+  ],
+  "ignorePatterns": ["node_modules/"],
+  "parser"        : "@typescript-eslint/parser",
+  "parserOptions" : { "project": "./tsconfig.json" },
+  "plugins"       : [
+    "@typescript-eslint",
+    "import",
+    "prettier",
+    "ramda",
+    "babel",
+    "jest",
+    "react"
+  ],
+  "rules": {
+    "semi": "off",
+  "@typescript-eslint/semi": "error",
+    "@typescript-eslint/no-unsafe-return"              :"off",
+    "@typescript-eslint/unbound-method"                : "off",
+    "@typescript-eslint/no-unsafe-assignment"          : "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "import/no-unresolved"                             : "error",
+    "@typescript-eslint/no-var-requires"               : "off",
+    "consistent-return"                                : "error",
+    "global-require"                                   : "off",
+    "import/extensions"                                : [
+      "error",
+      "ignorePackages",
+      {
+        "js" : "never",
+        "jsx": "never",
+        "mjs": "never",
+        "ts" : "never",
+        "tsx": "never"
+      }
+    ],
+    "@typescript-eslint/indent": [
+      "error",
+      2,
+      {
+        "VariableDeclarator": {
+          "var"  : 2,
+          "let"  : 2,
+          "const": 3
+        }
+      }
+    ],
+    "key-spacing": [
+      "error",
+      {
+        "align"     : { "on": "colon", "beforeColon": false, "afterColon": true },
+        "multiLine" : { "beforeColon": false, "afterColon": true },
+        "singleLine": { "beforeColon": false, "afterColon": true }
+      }
+    ],
+    "no-console"                          : "off",
+    "no-constant-condition"               : "off",
+    "no-nested-ternary"                   : "off",
+    "no-param-reassign"                   : "off",
+    "no-plusplus"                         : ["error", { "allowForLoopAfterthoughts": true }],
+    "no-unused-vars"                      : "off",
+    "no-use-before-define"                : "off",
+    "no-underscore-dangle"                : "off",
+    "object-curly-spacing"                : ["error", "always"],
+    "one-var"                             : "off",
+    "prettier/prettier"                   : ["off"],
+    "quotes"                              : ["error", "single"],
+    "react/default-props-match-prop-types": "off",
+    "react/destructuring-assignment"      : "off",
+    "react/forbid-prop-types"             : "off",
+    "react/jsx-filename-extension"        : [
+      "warn",
+      {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    ],
+    "react/jsx-fragments"         : "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/no-array-index-key"    : "off",
+    "react/no-danger"             : "off",
+    "react/no-unescaped-entities" : "off",
+    "react/no-unused-prop-types"  : "off",
+    "react/prop-types"            : "off",
+    "react/require-default-props" : "off",
+    "react/state-in-constructor"  : "off"
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {},
+      "node"      : {
+        "extensions": [
+          ".css",
+          ".js",
+          ".json",
+          ".jsx",
+          ".mjs",
+          ".sass",
+          ".scss",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    },
+    "propWrapperFunctions": ["forbidExtraProps"],
+    "react"               : {
+      "version": "^16.13.1"
+    }
+  }
+}

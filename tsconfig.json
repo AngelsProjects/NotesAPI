@@ -1,0 +1,126 @@
+{
+    "compilerOptions": {
+        "allowJs"                         : true,
+        "allowSyntheticDefaultImports"    : true,
+        "allowUnreachableCode"            : true,
+        "alwaysStrict"                    : true,
+        "baseUrl"                         : "./",
+        "declaration"                     : true,
+        "emitDecoratorMetadata"           : true,
+        "esModuleInterop"                 : true,
+        "experimentalDecorators"          : true,
+        "forceConsistentCasingInFileNames": true,
+        "importHelpers"                   : true,
+        "inlineSources"                   : true,
+        "isolatedModules"                 : true,
+        "module"                          : "CommonJS",
+        "moduleResolution"                : "node",
+        "noFallthroughCasesInSwitch"      : true,
+        "noImplicitAny"                   : true,
+        "noImplicitReturns"               : true,
+        "noImplicitThis"                  : true,
+        "noUnusedLocals"                  : true,
+        "noUnusedParameters"              : true,
+        "outDir"                          : ".build",
+        "preserveConstEnums"              : true,
+        "removeComments"                  : true,
+        "resolveJsonModule"               : true,
+        "rootDir"                         : "./",
+        "skipLibCheck"                    : true,
+        "sourceMap"                       : true,
+        "strict"                          : true,
+        "strictNullChecks"                : true,
+        "target"                          : "ESNext",
+        "lib"                             : [
+            "ES5",
+            "ES6",
+            "ES7",
+            "ESNext"
+        ],
+        "paths": {
+            "@constants/*": [
+                "src/constants/*"
+            ],
+            "@constants": [
+                "src/constants"
+            ],
+            "@controllers/*": [
+                "src/controllers/*"
+            ],
+            "@controllers": [
+                "src/controllers"
+            ],
+            "@db/*": [
+                "src/db/*"
+            ],
+            "@db": [
+                "src/db"
+            ],
+            "@handlers/*": [
+                "src/handlers/*"
+            ],
+            "@handlers": [
+                "src/handlers"
+            ],
+            "@helpers/*": [
+                "src/helpers/*"
+            ],
+            "@helpers": [
+                "src/helpers"
+            ],
+            "@interfaces/*": [
+                "src/interfaces/*"
+            ],
+            "@interfaces": [
+                "src/interfaces"
+            ],
+            "@middlewares/*": [
+                "src/middlewares/*"
+            ],
+            "@middlewares": [
+                "src/middlewares"
+            ],
+            "@providers/*": [
+                "src/providers/*"
+            ],
+            "@providers": [
+                "src/providers"
+            ],
+            "@routes/*": [
+                "src/routes/*"
+            ],
+            "@routes": [
+                "src/routes"
+            ],
+            "@services/*": [
+                "src/services/*"
+            ],
+            "@services": [
+                "src/services"
+            ],
+            "@utils/*": [
+                "src/utils/*"
+            ],
+            "@utils": [
+                "src/utils"
+            ]
+        }
+    },
+    "exclude": [
+        ".build/**/*",
+        "dist/**/*",
+        "node_modules/**/*",
+        ".webpack/**/*",
+        "_warmup/**/*",
+        ".vscode/**/*"
+    ],
+    "include": [
+        "index.ts",
+        "./src/**/*.ts",
+        "./**/*.js"
+    ],
+    "typeRoots": [
+        "src/types",
+        "node_modules/@types"
+    ]
+}

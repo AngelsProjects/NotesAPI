@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+.yarn/
+
+# production
+.build/
+dist/
+
+# ide
+.vscode/
+
+# Files not allow
+*.d.ts
+*.test.tsx
+*.spec.tsx
+*.test.ts
+*.spec.ts
+setupTests.ts
+
+./src/common
